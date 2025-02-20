@@ -55,6 +55,10 @@ function Translation() {
           <td>Bet</td>
         </tr>
         <tr>
+          <td scope="row">Or</td>
+          <td>Vai</td>
+        </tr>
+        <tr>
           <td scope="row">Kas un kāpēc ir funkcionālā iezīme?</td>
           <td>Skaidri un strukturēti aprakstītu sistēmas uzvedību.</td>
         </tr>
