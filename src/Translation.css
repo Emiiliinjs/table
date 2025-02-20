@@ -1,0 +1,73 @@
+.cool-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    animation: rainbow-flash 0.1s linear infinite;  /* Flashbang effect for the entire table */
+  }
+  
+  .cool-table caption {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow-flash 0.1s linear infinite, flash-text 0.1s ease infinite alternate;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  .cool-table th, .cool-table td {
+    padding: 20px;
+    border: 2px solid #fff;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: background-color 0.1s ease, transform 0.1s ease;
+  }
+  
+  .cool-table th {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+  }
+  
+  .cool-table tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .cool-table tr:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+  }
+  
+  .cool-table td {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .cool-table td:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+  
+  @keyframes rainbow-flash {
+    0% { background: linear-gradient(90deg, violet, indigo, blue, green, yellow, orange, red); }
+    25% { background: linear-gradient(90deg, red, yellow, green, blue, indigo, violet); }
+    50% { background: linear-gradient(90deg, blue, violet, indigo, red, yellow, green); }
+    75% { background: linear-gradient(90deg, yellow, red, green, blue, violet, indigo); }
+    100% { background: linear-gradient(90deg, indigo, violet, red, yellow, green, blue); }
+  }
+  
+  @keyframes flash-text {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+      text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.3);
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 0.8);
+    }
+  }
+  
